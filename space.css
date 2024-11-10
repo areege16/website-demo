@@ -1,0 +1,417 @@
+.spacebody {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(44, 59, 80);
+    /* لون خلفية */
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Orbitron', sans-serif;
+
+
+}
+
+.welcom {
+    opacity: 0; /* Start invisible */
+    animation: fadeIn 5s forwards; /* Apply fadeIn animation */
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start from invisible */
+        transform: translateY(-30px); /* Slightly move up */
+    }
+    to {
+        opacity: 1; /* End fully visible */
+        transform: translateY(0); /* End at the original position */
+    }
+}
+
+
+
+
+
+.background {
+    background-image: url("photos/space.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    /* ارتفاع الصورة 70% من ارتفاع النافذة */
+    position: relative;
+    /* لجعل العنصر يحتوي على العناصر الفرعية */
+    background-color: rgb(44, 59, 80);
+}
+
+.overlay {
+    position: absolute;
+    /* يجعل النص يظهر فوق الصورة */
+    top: 85%;
+    /* تحديد الموضع من الأعلى */
+    left: 50%;
+    /* تحديد الموضع من اليسار */
+    transform: translate(-50%, -50%);
+    /* تحريك النص ليكون في المركز */
+    text-align: center;
+    /* يجعل النص في المنتصف */
+    font-size: 30px;
+}
+
+.content {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* يسمح بتوسيع المحتوى عمودياً */
+}
+
+nav {
+    text-align: center;
+    /* يجعل المحتوى في المنتصف */
+    background-color :#1a1a2e;
+    /*background-color: rgb(44, 59, 80);*/
+    padding: 10px;
+    border: solid #efeada;
+    border-width: 5px 0px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 30px;
+    /* إضافة فراغ بين الروابط */
+}
+
+nav a:hover {
+    text-decoration: underline;
+    /* تأثير عند المرور */
+}
+
+
+
+.info-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: solid #efeada 2px;
+    background-color:rgb(44, 59, 80) /* لون خلفية البوكسات */
+
+}
+
+/* تنسيق كل مربع */
+.info-boxes .box {
+    background-color: #1a1a2e    ; 
+    border-radius: 10px;
+    height: 300px;
+    width: 350px;
+    padding: 25px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: solid #efeada 1px;
+}
+
+/* تأثير عند المرور بالفأرة */
+.info-boxes .box:hover {
+    transform: scale(1.05);
+}
+
+/* تنسيق الصور داخل المربعات */
+.info-boxes .box img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+/* تنسيق العناوين داخل المربعات */
+.info-boxes .box h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+/* تنسيق النص داخل المربعات */
+.info-boxes .box p {
+    font-size: 0.9em;
+    color: #ccc;
+}
+.info-boxes img {
+    width: 100px;
+    height: 175px;
+    margin: 10px;
+}
+
+a:link, a:visited {
+    background-color:  #efeada;
+    color: rgb(44, 59, 80);
+    border-radius: 50px;
+    border: 2px solid rgb(62, 72, 211);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: #031e3b ;
+    color: white;
+  }
+
+
+
+
+/* planets information */
+
+.planetsbody{
+    background-color: #031e3b;
+}
+
+.planet-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* Background color similar to the image */
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-direction: row;
+    /* تأكد من أن الاتجاه هو الصف */
+}
+
+/* Style for the image */
+.planet-info img {
+    width: 300px;
+    /* Adjust the width of the image as needed */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Text content next to the image */
+.text-content {
+    max-width: 450px;
+}
+
+/* Heading style */
+.text-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* List style for additional information */
+.text-content ul {
+    list-style-type: disc;
+    /* استخدم list-style-type بدلاً من list-style */
+    padding-left: 20px;
+    /* إضافة تباعد لجعل النقاط مرئية */
+    margin-top: 20px;
+}
+
+.text-content ul li {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+/*  nasa style   */
+
+.nasabody {
+    margin: 20px auto;
+    padding: 20px;
+        background-color: #031e3b;
+        /* لون خلفية */
+        color: #031e3b;
+        text-align: left;
+        font-size: 25px;
+    }
+
+.containernasa{
+ max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* moons*/
+.bodymoons {
+    font-family: Arial, sans-serif;
+    background-color: #031e3b;
+    color: #333;
+}
+
+.containerMoons {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Galaxy */ 
+.galaxybody {
+    font-family: Arial, sans-serif;
+    background-color: #031e3b;
+    color: #333;
+}
+.galaxycontent{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* stars */ 
+
+.starsbody {
+    font-family: Arial, sans-serif;
+    background-color: #031e3b;
+    color: #333;
+}
+.starscontent{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* black holes  */ 
+
+.blackbody {
+    font-family: Arial, sans-serif;
+    background-color: #031e3b;
+    color: #333;
+}
+.blackcontent{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* images style for all pages */
+
+.image-section{
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.featured-image {
+    width: 100%;
+    border-radius: 10px;
+    height: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+/* about style  */ 
+.about-section {
+    font-family: 'Rajdhani', sans-serif; /* تطبيق الخط على القسم */
+    background-color: #1a1a2e; /* لون خلفية داكن */
+    color: #ffffff; /* لون النص */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2em;
+    color: #e94560; /* لون مميز للعنوان */
+}
+
+.about-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+
+
+/* 
+
+
+
+
+
+.info-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    /* تعديل الفجوة بين المربعات 
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* تنسيق كل مربع 
+.info-boxes .box {
+    background-color: #031e3b;
+    border-radius: 10px;
+    border: solid #efeada 1px;
+    flex: 0 0 calc(30% - 20px);
+    /* جعل العرض 30% لتتسع 3 مربعات في صف واحد 
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    min-height: 350px;
+    /* زيادة الطول قليلاً 
+}
+
+/* تأثير عند المرور بالفأرة 
+.info-boxes .box:hover {
+    transform: scale(1.05);
+}
+
+/* تنسيق الصور داخل المربعات 
+.info-boxes .box img {
+    width: 70%;
+    /* تقليل عرض الصورة داخل المربع 
+    border-radius: 10px;
+}
+
+/* تنسيق العناوين داخل المربعات 
+.info-boxes .box h2 {
+    font-size: 1.3em;
+    /* تصغير حجم العنوان قليلاً 
+    margin: 10px 0;
+}
+
+/* تنسيق النص داخل المربعات 
+.info-boxes .box p {
+    font-size: 0.85em;
+    /* تصغير حجم النص قليلاً 
+    color: #ccc;
+}
+
+
+
+
+
+
+
+
+*/
